@@ -2,7 +2,7 @@ import logging as log
 from xmlrpc.client import SERVER_ERROR
 
 try:
-    a = int(input("Enter a number: "))
+    a = int(input("Enter a number to get its multiplication table: "))
     print(f"Multipliation table of {a} is : ")
     for i in range(1, 11):
         print(f"{a} X {i} = {a * i}")
@@ -27,8 +27,13 @@ finally:
     log.info("finally block is executed even in case of exceptions.")
 
 
+#  Rasing custom errors  => using raise keyword
+
+a = int(input("Enter any value between 5 and 9: "))
+
+if(a < 5 or a > 9):
+    raise ValueError("Value should be between 5 and 9")
+
+
 print("\nsome more line of code.")
 print("End of program.")
-
-
-
