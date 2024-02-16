@@ -1,17 +1,3 @@
-class Parent:
-    a: int 
-    b: int
-    def set(self, a, b):
-        self.a = a
-        self.b = b
-    
-    def sum(self):
-        print(self.a + self.b)
-    
+import pandas as pd
 
-
-par = Parent()
-
-par.set(10, 50)
-
-par.sum()
+print(__name__ == "__main__")
